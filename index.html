@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissors-game</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="game">
+        <div class="container">
+            <div class="game__header">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">rules</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/image-rules.svg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game__content">
+                    <div class="game-content__header">
+                        <p>Rock</p>
+                        <p>paper</p>
+                        <p>scissors</p>
+                    </div>
+
+                    <div class="game-content__score">
+                        <p class="score-text">score</p>
+                        <p class="score-number">0</p>
+                    </div>
+
+                </div>
+
+                <div class="rules">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Rules
+                    </button>
+                </div>
+            </div>
+
+            <div class="game__choices">
+                <div class="choices-user">
+                    <p>YOU</p>
+                    <P>COMPUTER</P>
+                </div>
+                <div class="game__choices--imgs">
+                    <div class="game__choices--img user-choice">
+                        <img src="assets/images/icon-paper.png" class="">
+                    </div>
+                    <div class="game__choices--img computer-choice">
+                        <img src="assets/images/icon-paper.png" class="">
+                    </div> 
+                </div>
+                 
+            </div>
+            
+             <div class="game-result">
+                <img src="assets/images/result.png" alt="">
+                <h2 class="result"></h2>
+             </div>
+
+            <div class="choice-options">
+                <div class="choice-option">
+                    <img src="assets/images/icon-rock.png" value="rock" class="rock">
+                    <p>rock</p>
+                </div>
+
+                <div class="choice-option">
+                    <img src="assets/images/icon-scissors.png" value="scissors" class="scissors">
+                    <p>scissors</p>
+                </div>
+
+                <div class="choice-option">
+                    <img src="assets/images/icon-paper.png" value="paper" class="paper">
+                    <p>paper</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

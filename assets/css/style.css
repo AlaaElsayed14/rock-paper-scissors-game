@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    background: url("../images//bg5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95.5vh;
+    text-transform: uppercase;
+}
+.container{
+    width: 40%;
+    margin: auto;
+}
+.game__header .modal-body {
+    margin: auto;
+    padding: 2rem 0 !important;
+}
+.game__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(253, 172, 229);
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 1.4rem 1rem;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    background-color: rgba(165, 42, 165, 0.695);
+}
+.game-content__header {
+   line-height: .7rem;
+}
+.game-content__header p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.68);
+}
+.game-content__score{
+    background-color: #fff;
+    padding: .6rem 1.5rem;
+    text-align: center;
+    line-height: 1rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.score-text{
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+.score-number{
+    font-size: 2.5rem;
+}
+
+.rules button{
+    position: fixed;
+    right: .5rem;
+    bottom: 1rem;
+    padding: .7rem 2.3rem;
+    background-color: rgba(165, 42, 165, 0.901);
+    border: .1rem solid rgba(68, 1, 68, 0.695);
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+
+.choices-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.9rem;
+}
+.choices-user p{
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.game__choices--imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .7rem;
+}
+.game__choices--img{
+   width: 9.5rem;
+   height: 9.5rem;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(248, 244, 238, 0.927);
+}
+
+.game__choices--img img{
+    width: 4.5rem;
+}
+.game__choices--img:first-child{
+    border: 1rem solid #ff0000;
+    /* transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg); */
+}
+
+.game__choices--img:last-child{
+    border: 1rem solid #005eff;
+    /* transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg); */
+}
+
+.game-result{
+    height: 2rem;
+    text-align: center;
+    width: 23rem;
+    margin: auto;
+}
+.game-result img{
+    width: 14rem;
+}
+.game-result h2{
+    color: #fff;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.68);
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+.choice-options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8.6rem;
+    background-color: rgba(252, 235, 252, 0.767);
+    padding: .4rem 0;
+    border-radius: 1rem;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.choice-option {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: .7;
+    width: 6rem;
+}
+.choice-option img{
+    width: 3rem;
+}
+
+.choice-option:hover{
+   opacity: 1;
+}
+.choice-option p{
+    color: #414250;
+    font-weight: bold;
+    padding-left: .3rem;
+    margin-bottom: 0;
+}
+
+
+@media (max-width:991px) {
+    .container{
+        width: 70%;
+    }
+    .game__header{
+        margin-top: 3rem ;
+    }
+    .game__choices{
+        margin-top: 6rem;
+    }
+    .game-result{
+        margin-top: 4rem;
+    }
+    .choice-options{
+        margin-top: 13rem;
+    }
+    .choice-option img{
+        width: 5rem;
+    }
+    .rules button{
+        right: 2rem;
+        bottom: 2rem;
+        padding: .8rem 2.5rem;
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:575px) {
+    .container{
+        width: 97%;
+    }
+    .game__header{
+        margin-top: 2rem ;
+    }
+    .game__choices{
+        margin-top: 1rem;
+    }
+    .game-result{
+        margin-top: 0rem;
+    }
+    .choice-options{
+        margin-top: 6rem;
+    }
+    .choice-option img{
+        width: 2rem;
+    }
+    .game-content__header p{
+        font-size: 1.8rem;
+    }
+    .choices-user p{
+        font-size: 1.3rem;
+    }
+    .game__choices--img{
+        width: 7.7rem;
+        height: 7.7rem;
+    }
+    .game__choices--img img{
+        width: 4rem;
+    }
+    .game__choices--img{
+        border-width: 9px !important;
+    }
+    .game-result img{
+        width: 9rem;
+    }
+    .game-result h2{
+        font-size: 2rem;
+    }
+    .rules button{
+        right: .4rem;
+        bottom: .4rem;
+        padding: .3rem 1.4rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .game__header {
+        margin-top: 1rem;
+    }
+    .game__content {
+        margin:  0;
+        padding: .6rem ;
+    }   
+    .game-content__header p{
+        font-size: 1.2rem;
+        line-height: .1rem;
+    }
+    .game-content__score {
+        padding: 0.2rem .7rem;
+    }
+    .score-text{
+        font-size: 1rem;
+    }
+    .score-number{
+        font-size: 2rem;
+    }
+    .choices-user {
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1.6rem;
+    }
+    .choices-user p{
+        font-size: 1.3rem;
+    }
+    .game-result{
+        height: 3rem;
+        text-align: center;
+        width: 12rem;
+        margin: auto;
+    }
+    .game-result img{
+        width: 5rem;
+        margin: auto;
+    }
+    .game-result h2{
+        font-size: 1.3rem;
+    }
+
+    .game__choices--img{
+        width: 6rem;
+        height: 6rem;
+    }
+    .game__choices--img img{
+        width: 3rem;
+    }
+    .choice-options{
+        margin-top: 1.7rem;
+    }
+    .choice-option img{
+        width: 1.4rem;
+    }
+    .choice-option p{
+        font-size: .8rem;
+    }
+    .rules button{
+        right: .4rem;
+        bottom: .6rem;
+        padding: .3rem 1rem;
+        font-size: 1rem;
+    }
+}
